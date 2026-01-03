@@ -1,0 +1,463 @@
+body {
+  background: #020617;
+  color: #e5e7eb;
+  font-family: Arial, sans-serif;
+  margin: 0;
+}
+
+header {
+  background: #020617;
+  padding: 14px;
+  text-align: center;
+  font-size: 18px;
+  font-weight: bold;
+  border-bottom: 1px solid #1e293b;
+}
+
+nav {
+  display: flex;
+  justify-content: space-around;
+  background: #020617;
+  padding: 10px;
+  border-bottom: 1px solid #1e293b;
+}
+
+nav button {
+  background: none;
+  border: none;
+  color: #38bdf8;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.page {
+  display: none;
+  padding: 16px;
+}
+
+.team-card {
+  background: #1e293b;
+  padding: 14px;
+  border-radius: 10px;
+  margin-bottom: 12px;
+}
+
+.team-card strong {
+  font-size: 15px;
+}
+
+.player-line {
+  margin-top: 6px;
+  padding: 6px;
+  border-radius: 6px;
+  background: #020617;
+  cursor: pointer;
+  font-size: 13px;
+}
+
+.player-line:hover {
+  background: #0f172a;
+}
+
+button {
+  cursor: pointer;
+}
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: linear-gradient(180deg, #020617, #020617);
+  color: #e5e7eb;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+    sans-serif;
+}
+
+/* HEADER */
+header {
+  padding: 16px;
+  text-align: center;
+  font-size: 20px;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  border-bottom: 1px solid #1e293b;
+}
+
+/* NAV */
+nav {
+  display: flex;
+  justify-content: space-around;
+  padding: 10px;
+  border-bottom: 1px solid #1e293b;
+}
+
+nav button {
+  background: none;
+  border: none;
+  color: #38bdf8;
+  font-size: 14px;
+  font-weight: 600;
+  padding: 6px 10px;
+  border-radius: 6px;
+}
+
+nav button:active {
+  background: #1e293b;
+}
+
+/* PAGE */
+.page {
+  display: none;
+  padding: 18px;
+  animation: fade 0.3s ease;
+}
+
+@keyframes fade {
+  from {
+    opacity: 0;
+    transform: translateY(6px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* TEAM CARD */
+.team-card {
+  background: #020617;
+  border: 1px solid #1e293b;
+  border-radius: 14px;
+  padding: 14px;
+  margin-bottom: 14px;
+}
+
+.team-card strong {
+  font-size: 16px;
+}
+
+/* PLAYER LIST */
+.player-line {
+  margin-top: 8px;
+  padding: 8px 10px;
+  border-radius: 10px;
+  background: #0f172a;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 14px;
+}
+
+.player-line:active {
+  background: #1e293b;
+}
+
+/* BADGES */
+.role-badge {
+  font-size: 11px;
+  padding: 3px 8px;
+  border-radius: 999px;
+  font-weight: 600;
+}
+
+.role-igl {
+  background: #facc15;
+  color: #020617;
+}
+
+.role-player {
+  background: #64748b;
+  color: white;
+}
+
+.role-assaulter {
+  background: #ef4444;
+  color: white;
+}
+
+.role-support {
+  background: #3b82f6;
+  color: white;
+}
+
+/* PLAYER DETAIL */
+#playerCard {
+  background: #020617;
+  border: 1px solid #1e293b;
+  border-radius: 16px;
+  padding: 16px;
+}
+
+#playerCard h2 {
+  margin-top: 0;
+  margin-bottom: 10px;
+  font-size: 20px;
+}
+
+/* FOOTER */
+footer {
+  text-align: center;
+  padding: 14px;
+  font-size: 12px;
+  color: #94a3b8;
+  border-top: 1px solid #1e293b;
+}
+/* HOME HERO */
+.home-hero {
+  text-align: center;
+  padding-top: 30px;
+}
+
+.hero-title {
+  font-size: 28px;
+  font-weight: 800;
+  margin-bottom: 10px;
+}
+
+.hero-sub {
+  font-size: 14px;
+  color: #94a3b8;
+  line-height: 1.6;
+  margin-bottom: 22px;
+}
+
+.hero-actions {
+  margin-bottom: 26px;
+}
+
+.hero-btn {
+  padding: 10px 18px;
+  border-radius: 999px;
+  font-size: 14px;
+  font-weight: 600;
+  margin: 6px;
+  border: none;
+}
+
+.hero-btn.primary {
+  background: #38bdf8;
+  color: #020617;
+}
+
+.hero-btn.secondary {
+  background: transparent;
+  color: #38bdf8;
+  border: 1px solid #38bdf8;
+}
+
+.hero-stats {
+  display: flex;
+  gap: 12px;
+}
+
+.stat-card {
+  flex: 1;
+  background: #0f172a;
+  border: 1px solid #1e293b;
+  border-radius: 14px;
+  padding: 14px;
+}
+
+.stat-card h2 {
+  margin: 0;
+  font-size: 22px;
+  color: #38bdf8;
+}
+
+.stat-card p {
+  margin: 4px 0 0;
+  font-size: 12px;
+  color: #94a3b8;
+}
+/* TEAM CARD PREMIUM */
+.team-card {
+  background: linear-gradient(180deg, #020617, #020617);
+  border: 1px solid #1e293b;
+  border-radius: 18px;
+  padding: 16px;
+  margin-bottom: 16px;
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+.team-card:active {
+  transform: scale(0.98);
+}
+
+/* TEAM TITLE */
+.team-title {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 12px;
+}
+
+.team-tag {
+  background: #0f172a;
+  border: 1px solid #1e293b;
+  color: #38bdf8;
+  font-size: 11px;
+  font-weight: 700;
+  padding: 4px 8px;
+  border-radius: 999px;
+}
+
+.team-name {
+  font-size: 17px;
+  font-weight: 700;
+}
+
+/* PLAYERS SECTION */
+.team-card > div:last-child {
+  margin-top: 10px;
+  padding-top: 10px;
+  border-top: 1px dashed #1e293b;
+}
+
+/* PLAYER ROW REFINEMENT */
+.player-line {
+  background: #020617;
+  border: 1px solid #1e293b;
+}
+
+.player-line span {
+  margin-left: 8px;
+}
+/* PLAYER PROFILE PREMIUM */
+#playerCard {
+  background: linear-gradient(180deg, #020617, #020617);
+  border: 1px solid #1e293b;
+  border-radius: 20px;
+  padding: 20px;
+  margin-top: 12px;
+}
+
+/* Player Name */
+#playerCard h2 {
+  margin: 0 0 14px;
+  font-size: 22px;
+  font-weight: 800;
+  letter-spacing: 0.3px;
+}
+
+/* Info rows */
+#playerCard p {
+  margin: 10px 0;
+  font-size: 14px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px 10px;
+  background: #0f172a;
+  border-radius: 10px;
+}
+
+/* Labels */
+#playerCard p strong {
+  color: #94a3b8;
+  font-weight: 600;
+}
+
+/* Back button polish */
+#player button {
+  margin-bottom: 12px;
+  background: transparent;
+  border: 1px solid #1e293b;
+  color: #38bdf8;
+  padding: 6px 12px;
+  border-radius: 999px;
+  font-size: 13px;
+}
+
+/* Small animation */
+#playerCard {
+  animation: pop 0.25s ease;
+}
+
+@keyframes pop {
+  from {
+    transform: scale(0.97);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+/* SEARCH */
+.search-box {
+  padding: 12px;
+}
+
+.search-box input {
+  width: 100%;
+  padding: 10px 14px;
+  border-radius: 999px;
+  border: 1px solid #1e293b;
+  background: #020617;
+  color: #e5e7eb;
+  font-size: 14px;
+}
+
+#searchResults {
+  padding: 0 16px;
+}
+
+.search-item {
+  padding: 10px;
+  border-radius: 10px;
+  background: #0f172a;
+  margin-bottom: 8px;
+  cursor: pointer;
+  border: 1px solid #1e293b;
+}
+
+.search-item strong {
+  color: #38bdf8;
+  font-size: 14px;
+}
+/* INPUT CURSOR FIX (ANDROID BUG) */
+.search-box input {
+  text-align: left;
+  direction: ltr;
+  unicode-bidi: plaintext;
+  caret-color: #38bdf8;
+}
+/* ANDROID INPUT NUCLEAR FIX */
+.search-fixed {
+  padding: 12px;
+}
+
+.search-fixed input {
+  all: unset;              /* <-- MOST IMPORTANT */
+  width: 100%;
+  padding: 10px 14px;
+  border-radius: 999px;
+  border: 1px solid #1e293b;
+  background: #020617;
+  color: #e5e7eb;
+  font-size: 14px;
+
+  direction: ltr;
+  text-align: left;
+  unicode-bidi: plaintext;
+
+  caret-color: #38bdf8;
+}
+/* BETA BADGE */
+.site-header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+}
+
+.beta-badge {
+  background: #facc15;
+  color: #020617;
+  font-size: 11px;
+  font-weight: 800;
+  padding: 3px 7px;
+  border-radius: 6px;
+  letter-spacing: 0.5px;
+  }
