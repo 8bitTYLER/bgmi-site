@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>BGMI Esports Hub</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="site-header">
+  BGMI Esports Hub
+  <span class="beta-badge">BETA</span>
+</header>
+
+
+  <nav>
+  <button onclick="show('home')">Home</button>
+  <button onclick="show('teams')">Teams</button>
+  <button onclick="show('tournaments')">Tournaments</button>
+  <button onclick="show('about')">About</button>
+</nav>
+
+<div class="search-fixed">
+  <input
+    type="text"
+    id="searchInput"
+    placeholder="Search team or player"
+    oninput="doSearch()"
+    autocomplete="off"
+    spellcheck="false"
+  />
+</div>
+
+<div id="searchResults"></div>
+   
+</div>
+</nav>
+
+<!-- HOME -->
+<section id="home" class="page home-hero">
+
+  <h1 class="hero-title">
+    India’s BGMI Esports Hub
+  </h1>
+
+  <p class="hero-sub">
+    Teams • Players • Tournaments <br>
+    All BGMI esports data in one place
+  </p>
+
+  <div class="hero-actions">
+    <button onclick="show('teams')" class="hero-btn primary">
+      Explore Teams
+    </button>
+    <button onclick="show('about')" class="hero-btn secondary">
+      About Project
+    </button>
+  </div>
+
+  <div class="hero-stats">
+    <div class="stat-card">
+      <h2>6+</h2>
+      <p>Teams</p>
+    </div>
+    <div class="stat-card">
+      <h2>20+</h2>
+      <p>Players</p>
+    </div>
+    <div class="stat-card">
+      <h2>2+</h2>
+      <p>Tournaments</p>
+    </div>
+  </div>
+
+</section>
+
+<!-- TEAMS -->
+<section id="teams" class="page">
+  <h2>Teams</h2>
+  <div id="teamsContainer"></div>
+</section>
+
+<!-- PLAYER -->
+<section id="player" class="page">
+  <button onclick="show('teams')">← Back to Teams</button>
+  <div id="playerCard" class="team-card"></div>
+</section>
+
+<!-- ABOUT -->
+<section id="about" class="page">
+  <h2>About</h2>
+  <p>This is a BGMI esports database made for learning and demo purposes.</p>
+</section>
+
+<footer>Made with LOVE ❤️ for BGMI Community</footer>
+
+<!-- DATA -->
+<script src="data.js"></script>
+
+<!-- SCRIPT -->
+<script>
+  function show(id) {
+    document.querySelectorAll('.page').forEach(p => {
+      p.style.display = 'none';
+    });
+    document.getElementById(id).style.display = 'block';
+  }
+
+  show('home');
+
+  const teamBox = document.getElementById("teamsContainer");
+
+  teams.forEach(team => {
+    const card = document.createElement("div");
+    card.className = "team-card";
+
+    const header = document.createElement("div");
+    header.innerHTML = `<div class="team-title">
+  <span class="team-tag">[${team.short}]</span>
+  <span class="team-name">${team.name}</span>
+</div>`;
+    card.appendChild(header);
+
+    const playersDiv = document.createElement("div");
+    playersDiv.style.display = "none";
+
+    team.players.forEach(p => {
+      const pl = document.createElement("div");
+      pl.className = "player-line";
+      pl.innerText = `${p.ign} (${p.role})`;
+      pl.onclick = () => openPlayer(p, team.name);
+      playersDiv.appendChild(pl);
+    });
+
+    card.onclick = () => {
+      playersDiv.style.display =
+        playersDiv.style.display === "none" ? "block" : "none";
+    };
+
+    card.appendChild(playersDiv);
+    teamBox.appendChild(card);
+  });
+
+  function openPlayer(player, teamName) {
+    const card = document.getElementById("playerCard");
+
+    card.innerHTML = `
+      <h2>${player.ign}</h2>
+      <p><strong>Role:</strong> ${player.role}</p>
+      <p><strong>Team:</strong> ${teamName}</p>
+    `;
+
+    show('player');
+  }
+  function doSearch() {
+  const q = document.getElementById("searchInput").value.toLowerCase();
+  const box = document.getElementById("searchResults");
+  box.innerHTML = "";
+
+  if (!q) return;
+
+  // Search teams
+  teams.forEach(team => {
+    if (team.name.toLowerCase().includes(q)) {
+      const div = document.createElement("div");
+      div.className = "search-item";
+      div.innerHTML = `<strong>Team:</strong> ${team.name}`;
+      div.onclick = () => {
+        show('teams');
+      };
+      box.appendChild(div);
+    }
+
+    // Search players
+    team.players.forEach(p => {
+      if (p.ign.toLowerCase().includes(q)) {
+        const div = document.createElement("div");
+        div.className = "search-item";
+        div.innerHTML = `
+          <strong>Player:</strong> ${p.ign}
+          <div style="font-size:12px;color:#94a3b8;">
+            ${team.name}
+          </div>
+        `;
+        div.onclick = () => {
+          openPlayer(p, team.name);
+        };
+        box.appendChild(div);
+      }
+    });
+  });
+}
+</script>
+
+</body>
+</html>
