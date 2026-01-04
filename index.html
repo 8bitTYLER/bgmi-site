@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>BGMI Esports Hub</title>
-  <link rel="stylesheet" href="style.css?v=10" />
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
@@ -13,12 +13,11 @@
   <span class="beta-badge">BETA v0.1</span>
 </header>
 
-<nav>
+
+  <nav>
   <button onclick="show('home')">Home</button>
   <button onclick="show('teams')">Teams</button>
   <button onclick="show('tournaments')">Tournaments</button>
-  <button onclick="show('news')">News</button>
-  <button onclick="show('rankings')">Rankings</button>
   <button onclick="show('about')">About</button>
 </nav>
 
@@ -34,92 +33,254 @@
 </div>
 
 <div id="searchResults"></div>
+   
+</div>
+</nav>
 
 <!-- HOME -->
 <section id="home" class="page home-future">
-  <h1 class="hero-title">India’s BGMI Esports Hub</h1>
+
+  <h1 class="hero-title">
+    India’s BGMI Esports Hub
+  </h1>
 
   <p class="hero-sub">
-    Teams • Players • Tournaments <br />
+    Teams • Players • Tournaments <br>
     All BGMI esports data in one place
   </p>
 
   <div class="hero-actions">
-    <button onclick="show('teams')" class="hero-btn primary">Explore Teams</button>
-    <button onclick="show('about')" class="hero-btn secondary">About Project</button>
+    <button onclick="show('teams')" class="hero-btn primary">
+      Explore Teams
+    </button>
+    <button onclick="show('about')" class="hero-btn secondary">
+      About Project
+    </button>
   </div>
 
   <div class="hero-stats">
-    <div class="stat-card"><h2>10+</h2><p>Teams</p></div>
-    <div class="stat-card"><h2>40+</h2><p>Players</p></div>
-    <div class="stat-card"><h2>5+</h2><p>Tournaments</p></div>
+    <div class="stat-card">
+      <h2>10+</h2>
+      <p>Teams</p>
+    </div>
+    <div class="stat-card">
+      <h2>40+</h2>
+      <p>Players</p>
+    </div>
+    <div class="stat-card">
+      <h2>5+</h2>
+      <p>Tournaments</p>
+    </div>
+  </div>
+<div class="home-extra-menu">
+
+  <div class="extra-card" onclick="show('news')">
+    <h3>📰 News</h3>
+    <p>Latest BGMI esports updates</p>
   </div>
 
-  <div class="home-extra-menu">
-    <div class="extra-card" onclick="show('news')">
-      <h3>📰 News</h3>
-      <p>Latest BGMI esports updates</p>
-    </div>
-    <div class="extra-card" onclick="show('rankings')">
-      <h3>🏆 Rankings</h3>
-      <p>Team & player rankings</p>
-    </div>
+  <div class="extra-card" onclick="show('rankings')">
+    <h3>🏆 Rankings</h3>
+    <p>Team & player rankings</p>
   </div>
 </section>
-
-<!-- NEWS -->
-<section id="news" class="page" style="display:none;">
+</div>
+</section>
+<section id="news" class="page">
   <h2>Latest BGMI News</h2>
 
   <div class="news-card">
     <span class="news-date">02 Jan 2026</span>
-    <h3>Krafton Rolls Out New Zone Meta</h3>
+    <h3>Krafton Rolls Out New Zone Meta for All Verified Third-Party BGMI Tournaments in 2026</h3>
     <p>
-      Krafton has standardized the new zone meta across all verified BGMI tournaments,
-      ensuring fair and consistent competitive play.
+      Before, only Krafton's own tournaments used the new zone meta, while other tournaments used an older one. This caused problems because teams had to switch strategies and it wasn't always fair. There was even a controversy where a team refused toplay because of the old zone settings.
+The new zone meta changes how quickly the safe zone shrinks in the game. This means players have to move around more often and be more aggressive, leading to more exciting matches. The updates affect how fast the zones change in different stages of the game on maps like Erangel and Miramar.With all approved tournaments now using the same zone settings, it will create a more consistent and fair competitive environment for BGMI players and teams in India. This should help reduce arguments and make the future of BGMI esports stronger.
     </p>
   </div>
 
   <div class="news-card">
     <span class="news-date">08 Jan 2026</span>
     <h3>Roster Changes Across Top Teams</h3>
-    <p>Several teams are experimenting with new lineups ahead of upcoming events.</p>
+    <p>
+      Several BGMI teams are experimenting with new lineups ahead of
+      the next major events.
+    </p>
+  </div>
+
+  <div class="news-card">
+    <span class="news-date">02 Jan 2026</span>
+    <h3>BGMI Competitive Scene Gaining Momentum</h3>
+    <p>
+      The Indian BGMI esports ecosystem continues to grow with rising
+      viewership and participation.
+    </p>
   </div>
 </section>
-
-<!-- RANKINGS -->
 <section id="rankings" class="page">
   <h2>BGMI Team Rankings (till 2025)</h2>
 
   <div class="ranking-table">
+
     <div class="ranking-row header">
-      <span>#</span><span>Team</span><span>Points</span>
+      <span>#</span>
+      <span>Team</span>
+      <span>Points</span>
     </div>
-    <div class="ranking-row"><span>1</span><span>iQOO Orangutan</span><span>1565</span></div>
-    <div class="ranking-row"><span>2</span><span>Team Ax</span><span>1300</span></div>
-    <div class="ranking-row"><span>3</span><span>K9 Esports</span><span>1200</span></div>
-    <div class="ranking-row"><span>4</span><span>NonX Esports</span><span>1025</span></div>
-    <div class="ranking-row"><span>5</span><span>iQOO Soul</span><span>985</span></div>
+
+    <div class="ranking-row">
+      <span>1</span>
+      <span> iQOO ORANGUTAN</span>
+      <span>1565</span>
+    </div>
+
+    <div class="ranking-row">
+      <span>2</span>
+      <span>Team Ax</span>
+      <span>1300</span>
+    </div>
+
+    <div class="ranking-row">
+      <span>3</span>
+      <span>K9 eSports</span>
+      <span>1200</span>
+    </div>
+
+    <div class="ranking-row">
+      <span>4</span>
+      <span>NoNx eSports </span>
+      <span>1025</span>
+    </div>
+
+    <div class="ranking-row">
+      <span>5</span>
+      <span>iQOO Soul</span>
+      <span>985</span>
+    </div>
+    
+  
+    <!-- TOP 5 PLAYERS BY FINISHES -->
+<h3 style="margin-top:24px;">Top 5 Players (Finishes)</h3>
+
+<div class="player-ranking-table">
+
+  <div class="player-row header">
+    <span>#</span>
+    <span>Player</span>
+    <span>Finishes</span>
   </div>
+
+  <div class="player-row">
+    <span>1</span>
+    <span>FsLeviiii</span>
+    <span>76</span>
+  </div>
+
+  <div class="player-row">
+    <span>2</span>
+    <span>AxDevotee0</span>
+    <span>76</span>
+  </div>
+
+  <div class="player-row">
+    <span>3</span>
+    <span>GxdlJonaThan03</span>
+    <span>88</span>
+  </div>
+
+  <div class="player-row">
+    <span>4</span>
+    <span>K9Ninjaboi</span>
+    <span>86</span>
+  </div>
+
+  <div class="player-row">
+    <span>5</span>
+    <span>iQOO8bitAquaX</span>
+    <span>81</span>
+  </div>
+
+
+</div>
+
+  </div>
+  <p class="data-source">
+  Source: <a href="https://esports.battlegroundsmobileindia.com/rankings/players" target="_blank">Krafton India Esports.com</a>
+</p>
 </section>
 
-<!-- TOURNAMENTS -->
+
+
+
+</div>
 <section id="tournaments" class="page">
   <h2>🏆 BGMI Tournaments – 2025</h2>
 
+  <!-- 1 -->
   <div class="tournament-card a-tier">
-    <h3>BGMI International Cup 2025</h3>
-    <p>💰 ₹93.5 लाख</p>
+    <h3>🌍 BGMI International Cup 2025</h3>
+    <p>💰 Prize Pool: ₹93.5 लाख</p>
     <p>🏆 Winner: DRX</p>
     <p>🥈 Runner-up: True Rippers</p>
   </div>
 
+  <!-- 2 -->
   <div class="tournament-card a-tier">
-    <h3>BGMI Showdown 2025</h3>
-    <p>💰 ₹93.8 लाख</p>
+    <h3>⚔️ BGMI Showdown 2025</h3>
+    <p>💰 Prize Pool: ₹93.8 लाख</p>
     <p>🏆 Winner: iQOO Orangutan</p>
     <p>🥈 Runner-up: K9 Esports</p>
   </div>
+
+  <!-- 3 -->
+  <div class="tournament-card a-tier">
+    <h3>🎮 BGMI Masters Series – Season 4</h3>
+    <p>💰 Prize Pool: ₹1.35 करोड़</p>
+    <p>🏆 Winner: K9 Esports</p>
+    <p>🥈 Runner-up: Sineway Esports</p>
+  </div>
+
+  <!-- 4 -->
+  <div class="tournament-card a-tier">
+    <h3>⚡ iQOO Battlegrounds Series 2025</h3>
+    <p>💰 Prize Pool: ₹95 लाख</p>
+    <p>🏆 Winner: iQOO Orangutan</p>
+    <p>🥈 Runner-up: Meta Ninja</p>
+  </div>
+
+  <!-- 5 -->
+  <div class="tournament-card a-tier">
+    <h3>🏅 BGMI Pro Series 2025</h3>
+    <p>💰 Prize Pool: ₹3.88 करोड़</p>
+    <p>🏆 Winner: Team Aryan X TMG</p>
+    <p>🥈 Runner-up: NonX Esports</p>
+  </div>
+
+  <!-- 6 -->
+  <div class="tournament-card a-tier">
+    <h3>🛡️ BGMI Series 2025 (BGIS)</h3>
+    <p>💰 Prize Pool: ₹3.13 करोड़</p>
+    <p>🏆 Winner: Team Versatile</p>
+    <p>🥈 Runner-up: Godlike Esports</p>
+  </div>
+
+  <!-- 7 -->
+  <div class="tournament-card b-tier">
+    <h3>🏟️ Chennai Esports Global Championship 2025</h3>
+    <p>💰 Prize Pool: ₹47 लाख</p>
+    <p>🏆 Winner: iQOO Soul</p>
+    <p>🥈 Runner-up: True Rippers</p>
+  </div>
+
+  <!-- 8 -->
+  <div class="tournament-card b-tier">
+    <h3>🎯 G-League 2025</h3>
+    <p>💰 Prize Pool: ₹9.6 लाख</p>
+    <p>🏆 Winner: iQOO Soul</p>
+    <p>🥈 Runner-up: Godlike Esports</p>
+  </div>
+
+</section>
+  </p>
 </section>
 
 <!-- TEAMS -->
@@ -139,36 +300,146 @@
   <h2>About This Site</h2>
 
   <p>
-    This is a fan-driven BGMI esports database created to track teams,
-    tournaments, and competitive results in India.
+    This website is a fan-driven BGMI esports database created to track
+    teams, tournaments, and competitive results in the Indian BGMI scene.
+  </p>
+
+  <p>
+    The aim of this project is to present BGMI esports information in a
+    clean, simple, and easy-to-understand format for fans and players.
+  </p>
+
+  <p>
+    ⚠️ This is an independent fan project and is not officially affiliated
+    with Krafton or any esports organization.
   </p>
 
   <h3>👤 Creator</h3>
-  <p>Created and maintained by <strong>ARPIT</strong>.</p>
+  <p>
+    Created and maintained by <strong>ARPIT</strong>.
+  </p>
 
-  <h3>📩 Suggestions & Feedback</h3>
-  <p>Email: <span class="email-text">palermoberlin42@gmail.com</span></p>
+  <p>
+    This project is under active development and new features will be
+    added over time.
+   
+    
+    <h3>📩 Suggestions & Feedback</h3>
+<p>
+  If you have any suggestions, corrections, or feedback regarding teams,
+  tournaments, or content on this site, feel free to reach out.
+</p>
+
+<p>
+  📧 Email:
+  <a href="mailto: palermoberlin42@gmail.com" class="email-link">
+    palermoberlin42@gmail.com
+  </a>
+  <span class="email-note">(opens mail app)</span>
+</p>
+  </p>
 </section>
 
-<footer>Made with ❤️ for BGMI Community</footer>
+<footer>Made with LOVE ❤️ for BGMI Community</footer>
 
 <!-- DATA -->
-<script src="data.js" defer></script>
+<script src="data.js"></script>
 
 <!-- SCRIPT -->
-<script defer>
+<script>
   function show(id) {
-    document.querySelectorAll(".page").forEach(p => p.style.display = "none");
-    const el = document.getElementById(id);
-    if (el) el.style.display = "block";
+    document.querySelectorAll('.page').forEach(p => {
+      p.style.display = 'none';
+    });
+    document.getElementById(id).style.display = 'block';
   }
 
-  document.addEventListener("DOMContentLoaded", () => {
-    show("home");
+  show('home');
+
+  const teamBox = document.getElementById("teamsContainer");
+
+  teams.forEach(team => {
+    const card = document.createElement("div");
+    card.className = "team-card";
+
+    const header = document.createElement("div");
+    header.innerHTML = `<div class="team-title">
+  <span class="team-tag">[${team.short}]</span>
+  <span class="team-name">${team.name}</span>
+</div>`;
+    card.appendChild(header);
+
+    const playersDiv = document.createElement("div");
+    playersDiv.style.display = "none";
+
+    team.players.forEach(p => {
+      const pl = document.createElement("div");
+      pl.className = "player-line";
+      pl.innerText = `${p.ign} (${p.role})`;
+      pl.onclick = () => openPlayer(p, team.name);
+      playersDiv.appendChild(pl);
+    });
+
+    card.onclick = () => {
+      playersDiv.style.display =
+        playersDiv.style.display === "none" ? "block" : "none";
+    };
+
+    card.appendChild(playersDiv);
+    teamBox.appendChild(card);
   });
 
-  function doSearch() {}
+  function openPlayer(player, teamName) {
+    const card = document.getElementById("playerCard");
+
+    card.innerHTML = `
+      <h2>${player.ign}</h2>
+      <p><strong>Role:</strong> ${player.role}</p>
+      <p><strong>Team:</strong> ${teamName}</p>
+    `;
+
+    show('player');
+  }
+  function doSearch() {
+  const q = document.getElementById("searchInput").value.toLowerCase();
+  const box = document.getElementById("searchResults");
+  box.innerHTML = "";
+
+  if (!q) return;
+
+  // Search teams
+  teams.forEach(team => {
+    if (team.name.toLowerCase().includes(q)) {
+      const div = document.createElement("div");
+      div.className = "search-item";
+      div.innerHTML = `<strong>Team:</strong> ${team.name}`;
+      div.onclick = () => {
+        show('teams');
+      };
+      box.appendChild(div);
+    }
+
+    // Search players
+    team.players.forEach(p => {
+      if (p.ign.toLowerCase().includes(q)) {
+        const div = document.createElement("div");
+        div.className = "search-item";
+        div.innerHTML = `
+          <strong>Player:</strong> ${p.ign}
+          <div style="font-size:12px;color:#94a3b8;">
+            ${team.name}
+          </div>
+        `;
+        div.onclick = () => {
+          openPlayer(p, team.name);
+        };
+        box.appendChild(div);
+      }
+    });
+  });
+}
 </script>
 
 </body>
-</html>
+  </html>
+  
