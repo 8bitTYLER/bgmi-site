@@ -64,7 +64,7 @@ const teams = [
       { ign: "Tracegod", role: "Assaulter" },
       { ign: "NinjaJod", role: "Player" },
       { ign: "JD Gaming", role: "Support" },
-      { ign: "Pain is live", role:"support"}
+      { ign: "Pain", role:"support"}
     ]
   },
   {
@@ -110,8 +110,8 @@ const teams = [
   ]
 },
 {
-  name: "Meta Ninza",
-  short: "Meta Ninza",
+  name: "Metaninza esports",
+  short: "Metaninza",
   players: [
     { ign: "Fierce", role: "Assaulter" },
     { ign: "WhiteTiger", role: "Assaulter" },
