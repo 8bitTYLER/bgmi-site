@@ -1,13 +1,510 @@
 const teams = [
   {
-    name: "iQOO Orangutan",
+    name: "Orangutan",
     short: "ORANGUTAN",
+    
+    description: "One of the most consistent teams in BGMI esports.",
+    founded: "in 2021",
+  location: " India",
+  winnings: "appx. ₹5.2 Crore+",
+  owner: "  Yash Bhanushali (founder)",
+
+    achievements: [
+  {
+    tournament: "PUBG Mobile Global Championship 2025",
+    result: "35th",
+    type: "pos"
+  },
+  {
+    tournament: "Battlegrounds Mobile India International Cup 2025",
+    result: "10th",
+    type: "pos"
+  },
+  {
+    tournament: "Battlegrounds Mobile India Showdown 2025",
+    result: "Winner 🏆",
+    type: "win"
+  },
+  {
+    tournament: "BGMI Masters Series Season 4",
+    result: "7th",
+    type: "pos"
+  },
+  {
+    tournament: "iQOO Battlegrounds Series",
+    result: "Winner 🏆",
+    type: "win"
+  },
+    {
+    tournament: "Survival Surge Chapter 1",
+    result: "6th",
+    type: "pos"
+  },
+    {
+          tournament: "G-League",
+          result: "12th",
+          type: "pos"
+  },
+  
+  {
+    tournament: "Clash of Champions Season 2",
+    result: "Runner Up 🥈",
+    type: "runner"
+  },
+    {
+    tournament: "Battlegrounds Mobile India Pro Series 2025",
+    result: "20th"
+  },
+    {
+    tournament: "Skyesports Championship 2024",
+    result: "20th",
+    type: "pos"
+  },
+    {
+          tournament: "Battlegrounds Mobile India Series 2025",
+          result: "3rd 🥉",
+          type: "third"
+  },
+    {
+          tournament: "OneGame Pro Championship Season 2",
+          result: "6th",
+          type: "pos"
+  },
+    {
+          tournament: "Battlegrounds Mobile India Series 2025: The Grind",
+          result: "3rd 🥉"
+  ,type: "third"
+            
+    },
+    {
+          tournament: "ESL Snapdragon Pro Series Season 6: BGMI",
+          result: "4th",
+          type: "pos"
+  },
+    {
+          tournament: "SL4Y Esports Glacial Glow",
+          result: "14th",
+          type: "pos"
+  },
+    {
+          tournament: "",
+          result: ""
+  },
+    {
+          tournament: "",
+          result: ""
+  },
+    {
+          tournament: "",
+          result: ""
+  },
+    {
+          tournament: "",
+          result: ""
+  },
+    {
+          tournament: "",
+          result: ""
+  },
+    {
+          tournament: "",
+          result: ""
+  },
+    {
+          tournament: "",
+          result: ""
+  },
+    {
+          tournament: "",
+          result: ""
+  },
+    {
+          tournament: "",
+          result: ""
+  },
+    {
+          tournament: "",
+          result: ""
+  },
+    {
+          tournament: "",
+          result: ""
+  },
+    {
+          tournament: "",
+          result: ""
+  },
+    {
+          tournament: "",
+          result: ""
+  },
+    {
+          tournament: "",
+          result: ""
+  },
+    {
+          tournament: "",
+          result: ""
+  },
+    {
+          tournament: "",
+          result: ""
+  },
+    {
+          tournament: "",
+          result: ""
+  },
+    {
+          tournament: "",
+          result: ""
+  },
+    {
+          tournament: "",
+          result: ""
+  },
+    {
+          tournament: "",
+          result: ""
+  },
+    {
+          tournament: "",
+          result: ""
+  },
+    {
+          tournament: "",
+          result: ""
+  },
+    {
+          tournament: "",
+          result: ""
+  },
+    {
+          tournament: "",
+          result: ""
+  },
+  
+  
+],
     players: [
-      { ign: "Ak", role: "Player" },
-      { ign: "WizzGod", role: "Player" },
-      { ign: "Aaru", role: "IGL" },
-      { ign: "Attanki", role: "Player" }
-    ]
+      {
+  ign: "Ak",
+  fullName:"Ankit Shukla",
+  role: "Assaulter",
+  status: "Active",
+  photo: "",
+  country: "India",
+
+  tournaments: [
+{
+  year: "2025",
+  name: "Battlegrounds Mobile India Showdown",
+  result: "1st 🏆",
+  type: "win"
+},
+{
+  year: "2025",
+  name: "iQOO Battlegrounds Series",
+  result: "1st 🏆",
+  type: "win"
+},
+{
+  year: "2025",
+  name: "Battlegrounds Mobile India Series",
+  result: "3rd",
+  type: "pos"
+},
+{
+  year: "2025",
+  name: "ESL Snapdragon Pro Series Season 6: BGMI",
+  result: "4th",
+  type: "pos"
+},
+
+{
+  year: "2024",
+  name: "Battlegrounds Mobile India Pro Series",
+  result: "6th",
+  type: "pos"
+},
+{
+  year: "2024",
+  name: "ESL Snapdragon Pro Series: 2024 BGMI",
+  result: "5th",
+  type: "pos"
+},
+
+{
+  year: "2023",
+  name: "Upthrust Esports Pro Showdown Season 2",
+  result: "1st 🏆",
+  type: "win"
+},
+{
+  year: "2023",
+  name: "BGMI Masters Series Season 2",
+  result: "2nd",
+  type: "pos"
+},
+
+{
+  year: "2022",
+  name: "BGMI Masters Series",
+  result: "3rd",
+  type: "pos"
+},
+
+{
+  year: "2021",
+  name: "LOCO War of Glory: League Stage",
+  result: "1st 🏆",
+  type: "win"
+}
+
+  ],
+
+  achievements: [
+  { text: "MVP 🥇 - iQOO Battlegrounds Series", type: "mvp" },
+  { text: "MVP 🥇 - BGMI Masters Series Season 3 2024", type: "mvp" },
+  {text:"MVP 🥇 - ESL Snapdragon Pro Series: 2024 BGMI", type:"mvp"},
+  {text:"DAMAGER- Week 2 - BGMI Masters Series 2022", type:"normal"},
+  {text:"MVP 🥇 - Week 2 - BGMI Masters Series 2022", type:"mvp"},
+  {text:"Top Fragger - Week 2- LOCO Diwali Battle: League Stage 2021",type:"normal"},
+  {text:"MVP 🥇- India Today's Dangal 2021", type:"mvp"},
+  {text:"MVP - LOCO War of Glory: League Stage 2021,", type:"normal"}
+  
+]
+},
+
+      { ign: "WizzGod", role: "Player",
+      fullName:"Faraz Khan",
+      status:"Active",
+      photo: "",
+     country:"India",
+     tournaments: [
+    { name: "BGMI Masters Series S4", result: "Winner 🏆", type: "win" },
+    { name: "BGIS 2024", result: "Runner-up 🥈", type: "runner" }
+  ],
+  tournaments: [
+  // ===== 2025 =====
+ {
+  year: "2025",
+  name: "Battlegrounds Mobile India Showdown",
+  result: "1st 🏆",
+  type: "win"
+},
+{
+  year: "2025",
+  name: "iQOO Battlegrounds Series",
+  result: "1st 🏆",
+  type: "win"
+},
+{
+  year: "2025",
+  name: "Battlegrounds Mobile India Series",
+  result: "3rd",
+  type: "pos"
+},
+{
+  year: "2025",
+  name: "ESL Snapdragon Pro Series Season 6: BGMI",
+  result: "4th",
+  type: "pos"
+},
+
+{
+  year: "2024",
+  name: "Battlegrounds Mobile India Pro Series",
+  result: "6th",
+  type: "pos"
+},
+{
+  year: "2024",
+  name: "ESL Snapdragon Pro Series: 2024 BGMI",
+  result: "5th",
+  type: "pos"
+},
+
+{
+  year: "2023",
+  name: "Upthrust Esports Pro Showdown Season 2",
+  result: "1st 🏆",
+  type: "win"
+},
+{
+  year: "2023",
+  name: "BGMI Masters Series Season 2",
+  result: "2nd",
+  type: "pos"
+},
+
+{
+  year: "2022",
+  name: "BGMI Masters Series",
+  result: "3rd",
+  type: "pos"
+},
+
+{
+  year: "2020",
+  name: "ILG Cup Season 3",
+  result: "1st 🏆",
+  type: "win"
+},
+  ] ,
+  achievements: [
+   {text:"Semi-finals MVP - RA Esports - Champions Gala Season 1 2024,", type:"normal"},
+   {text:"MVP 🥇- Upthrust Esports - The Patriot Cup 2024",
+     type:"mvp"
+   }
+  ]
+},
+     
+      
+     {
+  ign: "Aaru",
+  role: "IGL",
+  bestIGL: true,
+  status: "Active",
+  photo: "",
+  country: "India",
+
+  tournaments: [
+  // ===== 2025 =====
+{
+  year: "2025",
+  name: "PUBG Mobile Global Championship",
+  result: "35th–36th",
+  type: "pos"
+},
+{
+  year: "2025",
+  name: "Battlegrounds Mobile India Showdown",
+  result: "1st 🏆",
+  type: "win"
+},
+{
+  year: "2025",
+  name: "BGMI Masters Series Season 4",
+  result: "7th",
+  type: "pos"
+},
+{
+  year: "2025",
+  name: "iQOO Battlegrounds Series",
+  result: "1st 🏆",
+  type: "win"
+},
+{
+  year: "2025",
+  name: "Battlegrounds Mobile India Series",
+  result: "3rd",
+  type: "pos"
+},
+{
+  year: "2025",
+  name: "ESL Snapdragon Pro Series Season 6: BGMI",
+  result: "4th",
+  type: "pos"
+},
+
+{
+  year: "2024",
+  name: "Battlegrounds Mobile India Pro Series",
+  result: "6th",
+  type: "pos"
+},
+{
+  year: "2024",
+  name: "BGMI Masters Series Season 3",
+  result: "5th",
+  type: "pos"
+},
+
+{
+  year: "2022",
+  name: "Battlegrounds Mobile India Pro Series Season 1",
+  result: "2nd",
+  type: "pos"
+}
+],
+
+  achievements: [
+      {text:"IGL of the Year - Krafton India Awards 2025" ,type:"mvp"},
+    {text:"Best IGL - Battlegrounds Mobile India Showdown 2025", type:"mvp"}
+  
+  ]
+},
+      { ign: "Attanki", role: "Player",
+      status:"Active",
+      photo:"",
+      country:"India",
+      tournaments: [
+    {
+  year: "2025",
+  name: "PUBG Mobile Global Championship",
+  result: "35th–36th",
+  type: "pos"
+},
+{
+  year: "2025",
+  name: "Battlegrounds Mobile India Showdown",
+  result: "1st 🏆",
+  type: "win"
+},
+{
+  year: "2025",
+  name: "iQOO Battlegrounds Series",
+  result: "1st 🏆",
+  type: "win"
+},
+{
+  year: "2025",
+  name: "Battlegrounds Mobile India Series",
+  result: "3rd",
+  type: "pos"
+},
+{
+  year: "2025",
+  name: "ESL Snapdragon Pro Series Season 6: BGMI",
+  result: "4th",
+  type: "pos"
+},
+
+{
+  year: "2024",
+  name: "Battlegrounds Mobile India Pro Series",
+  result: "6th",
+  type: "pos"
+},
+
+{
+  year: "2022",
+  name: "Battlegrounds Mobile India Pro Series Season 1",
+  result: "2nd",
+  type: "pos"
+},
+{
+  year: "2022",
+  name: "7Sea Invitational",
+  result: "1st 🏆",
+  type: "win"
+},
+
+{
+  year: "2020",
+  name: "PUBG Mobile Pro League – South Asia Season 1",
+  result: "1st 🏆",
+  type: "win"
+}
+  ],
+
+  achievements: [
+   {text:"MVP 🥇Pro Warrior Cup Season 2022 ", type:"mvp"}
+  ]
+},
+        
+      
+ ]   
   },
   {
     name: "K9 Esports",
@@ -21,7 +518,7 @@ const teams = [
     ]
   },
   {
-    name: "iQOO Soul",
+    name: "Soul",
     short: "SOUL",
     players: [
       { ign: "Goblin", role: "Fragger" },
@@ -79,7 +576,7 @@ const teams = [
   },
   
   {
-    name: "iQOO 8bit",
+    name: "8bit",
     short: "8bit",
     players: [
       { ign: "Raiden", role: "Assaulter" },
@@ -203,12 +700,53 @@ const teams = [
     name: "BGIS 2023",
     year: 2023,
     prize: "₹2 Crore",
-    topTeams: ["iQOO Soul", "K9 Esports", "iQOO Orangutan Esports"]
+    topTeams: ["Soul", "K9 Esports", "Orangutan Esports"]
   },
   {
     name: "PMIS 2022",
     year: 2022,
     prize: "₹1 Crore",
-    topTeams: ["iQOO Orangutan Esports", "iQOO Soul"]
+    topTeams: ["Orangutan Esports", "Soul"]
   }
 ]
+const players = [
+  {
+    id: "Jonathan",
+    ign: "Jonathan",
+    role: "Assaulter",
+    team: "GodLike Esports",
+    status: "Active",
+
+    // Optional (future image)
+    photo: "",
+
+    // ===== TOURNAMENT HISTORY =====
+    tournaments: [
+      {
+        name: "BGMI Pro Series 2025",
+        team: "GodLike Esports",
+        result: "3rd 🥉",
+        type: "third"
+      },
+      {
+        name: "BGIS 2024",
+        team: "GodLike Esports",
+        result: "Runner Up 🥈",
+        type: "runner"
+      },
+      {
+        name: "BMPS Season 3",
+        team: "GodLike Esports",
+        result: "Winner 🏆",
+        type: "win"
+      }
+    ],
+
+    // ===== ACHIEVEMENTS =====
+    achievements: [
+      "MVP – BGMI Pro Series 2025",
+      "Best Assaulter – BGIS 2024",
+      "LAN Champion (2×)"
+    ]
+  },
+];
