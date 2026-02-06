@@ -1,9 +1,10 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>BGMI Esports Hu</title>
+  <title>BGMI Esports Hub</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -58,27 +59,16 @@
     </button>
   </div>
 
-  <div class="hero-stats">
-    <div class="stat-card">
-      <h2>10+</h2>
-      <p>Teams</p>
-    </div>
-    <div class="stat-card">
-      <h2>40+</h2>
-      <p>Players</p>
-    </div>
-    <div class="stat-card">
-      <h2>5+</h2>
-      <p>Tournaments</p>
-    </div>
-  </div>
+
+
+
 <div class="home-extra-menu">
 
-  <div class="extra-card" onclick="show('news')">
-    <h3>📰 News</h3>
-    <p>Latest BGMI esports updates</p>
-  </div>
-
+  <div class="home-preview">
+  <h3>📰 Latest News</h3>
+  <p>Krafton rolls out new zone meta for BGMI tournaments.</p>
+  <button onclick="show('news')">View all news →</button>
+</div>
   <div class="extra-card" onclick="show('rankings')">
     <h3>🏆 Rankings</h3>
     <p>Team & player rankings</p>
@@ -88,6 +78,8 @@
 </section>
 <section id="news" class="page">
   <h2>Latest BGMI News</h2>
+  
+  
 
   <div class="news-card">
     <span class="news-date">02 Jan 2026</span>
@@ -116,20 +108,17 @@ The new zone meta changes how quickly the safe zone shrinks in the game. This me
     </p>
   </div>
 </section>
+
 <section id="rankings" class="page">
+  
+
   <h2>BGMI Team Rankings (till 2025)</h2>
 
   <div class="ranking-table">
 
-    <div class="ranking-row header">
-      <span>#</span>
-      <span>Team</span>
-      <span>Points</span>
-    </div>
-
     <div class="ranking-row">
       <span>1</span>
-      <span> iQOO ORANGUTAN</span>
+      <span>ORANGUTAN</span>
       <span>1565</span>
     </div>
 
@@ -147,71 +136,70 @@ The new zone meta changes how quickly the safe zone shrinks in the game. This me
 
     <div class="ranking-row">
       <span>4</span>
-      <span>NoNx eSports </span>
+      <span>NoNx eSports</span>
       <span>1025</span>
     </div>
 
     <div class="ranking-row">
       <span>5</span>
-      <span>iQOO Soul</span>
+      <span>Soul</span>
       <span>985</span>
     </div>
-    
-  
-    <!-- TOP 5 PLAYERS BY FINISHES -->
-<h3 style="margin-top:24px;">Top 5 Players (Finishes)</h3>
 
-<div class="player-ranking-table">
+  </div> <!-- ✅ ranking-table CLOSED -->
 
-  <div class="player-row header">
-    <span>#</span>
-    <span>Player</span>
-    <span>Finishes</span>
-  </div>
+  <!-- TOP 5 PLAYERS BY FINISHES -->
+  <h3 style="margin-top:24px;">Top 5 Players (Finishes)</h3>
 
-  <div class="player-row">
-    <span>1</span>
-    <span>FsLeviiii</span>
-    <span>76</span>
-  </div>
+  <div class="player-ranking-table">
 
-  <div class="player-row">
-    <span>2</span>
-    <span>AxDevotee0</span>
-    <span>76</span>
-  </div>
+    <div class="player-row header">
+      <span>#</span>
+      <span>Player</span>
+      <span>Finishes</span>
+    </div>
 
-  <div class="player-row">
-    <span>3</span>
-    <span>GxdlJonaThan03</span>
-    <span>88</span>
-  </div>
+    <div class="player-row">
+      <span>1</span>
+      <span>FsLeviiii</span>
+      <span>76</span>
+    </div>
 
-  <div class="player-row">
-    <span>4</span>
-    <span>K9Ninjaboi</span>
-    <span>86</span>
-  </div>
+    <div class="player-row">
+      <span>2</span>
+      <span>AxDevotee0</span>
+      <span>76</span>
+    </div>
 
-  <div class="player-row">
-    <span>5</span>
-    <span>iQOO8bitAquaX</span>
-    <span>81</span>
-  </div>
+    <div class="player-row">
+      <span>3</span>
+      <span>GxdlJonaThan03</span>
+      <span>88</span>
+    </div>
 
+    <div class="player-row">
+      <span>4</span>
+      <span>K9Ninjaboi</span>
+      <span>86</span>
+    </div>
 
-</div>
+    <div class="player-row">
+      <span>5</span>
+      <span>iQOO8bitAquaX</span>
+      <span>81</span>
+    </div>
 
   </div>
+
   <p class="data-source">
-  Source: <a href="https://esports.battlegroundsmobileindia.com/rankings/players" target="_blank">Krafton India Esports.com</a>
-</p>
-</section>
+    Source:
+    <a href="https://esports.battlegroundsmobileindia.com/rankings/players" target="_blank">
+      Krafton India Esports.com
+    </a>
+  </p>
 
+</section> <!-- ✅ rankings CLOSED -->
 
-
-
-</div>
 <section id="tournaments" class="page">
   <h2>🏆 BGMI Tournaments – 2025</h2>
 
@@ -227,7 +215,7 @@ The new zone meta changes how quickly the safe zone shrinks in the game. This me
   <div class="tournament-card a-tier">
     <h3>⚔️ BGMI Showdown 2025</h3>
     <p>💰 Prize Pool: ₹93.8 लाख</p>
-    <p>🏆 Winner: iQOO Orangutan</p>
+    <p>🏆 Winner: Orangutan</p>
     <p>🥈 Runner-up: K9 Esports</p>
   </div>
 
@@ -236,15 +224,15 @@ The new zone meta changes how quickly the safe zone shrinks in the game. This me
     <h3>🎮 BGMI Masters Series – Season 4</h3>
     <p>💰 Prize Pool: ₹1.35 करोड़</p>
     <p>🏆 Winner: K9 Esports</p>
-    <p>🥈 Runner-up: Sinewy Esports</p>
+    <p>🥈 Runner-up: Sineway Esports</p>
   </div>
 
   <!-- 4 -->
   <div class="tournament-card a-tier">
     <h3>⚡ iQOO Battlegrounds Series 2025</h3>
     <p>💰 Prize Pool: ₹95 लाख</p>
-    <p>🏆 Winner: iQOO Orangutan</p>
-    <p>🥈 Runner-up: Metaninza Esports</p>
+   <p>🏆 Winner: Orangutan </p>
+    <p>🥈 Runner-up: Meta Ninja</p>
   </div>
 
   <!-- 5 -->
@@ -267,7 +255,7 @@ The new zone meta changes how quickly the safe zone shrinks in the game. This me
   <div class="tournament-card b-tier">
     <h3>🏟️ Chennai Esports Global Championship 2025</h3>
     <p>💰 Prize Pool: ₹47 लाख</p>
-    <p>🏆 Winner: iQOO Soul</p>
+    <p>🏆 Winner:Soul</p>
     <p>🥈 Runner-up: True Rippers</p>
   </div>
 
@@ -275,7 +263,7 @@ The new zone meta changes how quickly the safe zone shrinks in the game. This me
   <div class="tournament-card b-tier">
     <h3>🎯 G-League 2025</h3>
     <p>💰 Prize Pool: ₹9.6 लाख</p>
-    <p>🏆 Winner: iQOO Soul</p>
+    <p>🏆 Winner:Soul</p>
     <p>🥈 Runner-up: Godlike Esports</p>
   </div>
 
@@ -288,13 +276,99 @@ The new zone meta changes how quickly the safe zone shrinks in the game. This me
   <h2>Teams</h2>
   <div id="teamsContainer"></div>
 </section>
+<!-- TEAM DETAIL PAGE -->
+<section id="team-detail" class="page">
+  <button onclick="show('teams')">← Back to Teams</button>
 
+  <h2 id="teamName"></h2>
+  <div class="team-layout">
+
+<!-- TEAM INFO -->
+<div class="team-info-box">
+        <div class="team-logo-wrap" id="teamLogoWrap">
+  <img id="teamLogo" class="team-logo" /> 
+        </div>
+
+  <div class="team-info-row">
+    <span class="team-info-label">Founded</span>
+    <span class="team-info-value" id="teamFounded"></span>
+  </div>
+
+  <div class="team-info-row">
+    <span class="team-info-label">Location</span>
+    <span class="team-info-value" id="teamLocation"></span>
+  </div>
+
+  <div class="team-info-row">
+    <span class="team-info-label">Approx Winnings</span>
+    <span class="team-info-value" id="teamWinnings"></span>
+  </div>
+
+  <div class="team-info-row">
+    <span class="team-info-label">Owner</span>
+    <span class="team-info-value" id="teamOwner"></span>
+  </div>
+
+</div>
+
+  <!-- TEAM MAIN CONTENT -->
+  <div class="team-content">
+  <p id="teamDesc"></p>
+
+  <h3>Roster</h3>
+  <ul id="teamRoster"></ul>
+<h3>Achievements (2025)</h3>
+
+<table class="ach-table">
+  <thead>
+    <tr>
+      <th>Tournament</th>
+      <th>Result/Position</th>
+    </tr>
+  </thead>
+  <tbody id="teamAchievements"></tbody>
+</table>
+</section>
 <!-- PLAYER -->
 <section id="player" class="page">
-  <button onclick="show('teams')">← Back to Teams</button>
-  <div id="playerCard" class="team-card"></div>
-</section>
 
+  <button onclick="show('teams')" class="back-btn">← Back</button>
+
+  <div class="player-card">
+
+    <div class="player-avatar">
+      <img src="" alt="Player" id="playerImage">
+    </div>
+
+    <h2 id="playerName"></h2>
+    <p id="playerFullName" class="player-fullname"></p>
+
+    <!-- BASIC DETAILS (SINGLE SOURCE OF TRUTH) -->
+    <div class="player-basic">
+      <div><span>Role</span><strong id="playerRole"></strong></div>
+      <div><span>Team</span><strong id="playerTeam"></strong></div>
+      <div><span>Status</span><strong id="playerStatus"></strong></div>
+      <div><span>Country</span><strong id="playerCountry"></strong></div>
+    </div>
+
+    <!-- TOURNAMENT HISTORY -->
+    <div id="playerTournaments" class="player-section">
+      <h3>Achievements</h3>
+      <div class="player-tournament-list"></div>
+    </div>
+
+    <!-- ACHIEVEMENTS -->
+    <div id="playerAchievements" class="player-section">
+      <h3>Awards</h3>
+      <ul class="player-achievement-list"></ul>
+    </div>
+
+    <p class="coming-soon">
+      Player profile details & stats will be added soon.
+    </p>
+
+  </div>
+</section>
 <!-- ABOUT -->
 <section id="about" class="page">
   <h2>About This Site</h2>
@@ -339,6 +413,16 @@ The new zone meta changes how quickly the safe zone shrinks in the game. This me
 </p>
   </p>
 </section>
+<!-- MINI ROADMAP -->
+<div class="mini-roadmap">
+  <h3>🛣️ Roadmap</h3>
+  <div class="mini-steps">
+    <span class="done">✓ Core Live</span>
+    <span class="done">✓ News & Rankings</span>
+    <span class="progress">⏳ Team Profiles</span>
+    <span class="upcoming">🔜 Player Stats</span>
+  </div>
+</div>
 
 <footer>Made with LOVE ❤️ for BGMI Community</footer>
 
@@ -351,11 +435,130 @@ The new zone meta changes how quickly the safe zone shrinks in the game. This me
     document.querySelectorAll('.page').forEach(p => {
       p.style.display = 'none';
     });
-    document.getElementById(id).style.display = 'block';
+    const el = document.getElementById(id);
+    if (el) el.style.display = 'block';
   }
 
   show('home');
 
+  function openTeam(team) {
+
+    /* ===== BASIC TEAM INFO ===== */
+    document.getElementById("teamName").innerText = team.name;
+    document.getElementById("teamDesc").innerText = team.description || "";
+    // TEAM LOGO SAFE HANDLING
+const logoEl = document.getElementById("teamLogo");
+
+if (logoEl) {
+  if (team.logo) {
+    logoEl.src = team.logo;
+    logoEl.style.display = "block";
+  } else {
+    logoEl.src = "";
+    logoEl.style.display = "none";
+  }
+}
+
+    /* ===== TEAM META (NEW – SAFE) ===== */
+    if (document.getElementById("teamLogo")) {
+      document.getElementById("teamLogo").src = team.logo || "";
+    }
+    if (document.getElementById("teamFounded")) {
+      document.getElementById("teamFounded").innerText = team.founded || "-";
+    }
+    if (document.getElementById("teamLocation")) {
+      document.getElementById("teamLocation").innerText = team.location || "-";
+    }
+    if (document.getElementById("teamWinnings")) {
+      document.getElementById("teamWinnings").innerText = team.winnings || "-";
+    }
+    if (document.getElementById("teamOwner")) {
+      document.getElementById("teamOwner").innerText = team.owner || "-";
+    }
+    function getRoleClass(role) {
+  if (!role) return "role-player";
+
+  switch (role.toLowerCase()) {
+    case "igl":
+      return "role-igl";
+    case "assaulter":
+      return "role-assaulter";
+    case "fragger":
+      return "role-fragger";
+    case "support":
+      return "role-support";
+    default:
+      return "role-player";
+  }
+}
+
+    /* ===== ROSTER ===== */
+    const roster = document.getElementById("teamRoster");
+    roster.innerHTML = "";
+    if (Array.isArray(team.players)) {
+      team.players.forEach(p => {
+        const li = document.createElement("li");
+        li.className = "player-row";
+        let roleClass = "";
+
+if (p.role === "IGL") roleClass = "role-igl";
+else if (p.role === "Assaulter") roleClass = "role-assaulter";
+else if (p.role === "Fragger") roleClass = "role-fragger";
+else if (p.role === "Support") roleClass = "role-support";
+else roleClass = "role-player";
+
+li.innerHTML = `
+  <div class="roster-card">
+    <span class="roster-name">${p.ign}</span>
+    
+    <span class="roster-role ${roleClass}">
+      ${p.role}
+    </span>
+  </div>
+
+`;
+        li.onclick = () => {
+  // remove active from all players
+  document
+    .querySelectorAll("#teamRoster .player-row")
+    .forEach(row => row.classList.remove("active"));
+
+  // add active to clicked player
+  li.classList.add("active");
+
+  openPlayer(p, team.name);
+};
+        roster.appendChild(li);
+});
+    }
+
+    /* ===== ACHIEVEMENTS (UNCHANGED + SAFE) ===== */
+    const ach = document.getElementById("teamAchievements");
+    ach.innerHTML = "";
+
+    if (Array.isArray(team.achievements)) {
+      team.achievements.forEach(a => {
+        if (!a || !a.tournament || !a.result) return;
+
+        const tr = document.createElement("tr");
+        tr.innerHTML = `
+          <td class="tournament-name">
+            ${a.tournament}
+          </td>
+          <td class="result-cell">
+            <span class="result-badge ${a.type || 'pos'}">
+              ${a.result}
+            </span>
+          </td>
+        `;
+        ach.appendChild(tr);
+      });
+    }
+
+    show("team-detail");
+  }
+
+  /* ===== TEAMS LIST ===== */
   const teamBox = document.getElementById("teamsContainer");
 
   teams.forEach(team => {
@@ -363,83 +566,136 @@ The new zone meta changes how quickly the safe zone shrinks in the game. This me
     card.className = "team-card";
 
     const header = document.createElement("div");
-    header.innerHTML = `<div class="team-title">
-  <span class="team-tag">[${team.short}]</span>
-  <span class="team-name">${team.name}</span>
-</div>`;
+    header.className = "team-header";
+
+    header.innerHTML = `
+      ${team.logo ? 
+  `<img src="${team.logo}" alt="${team.name}" class="team-logo">` 
+  : 
+  `<div class="team-logo placeholder">🏆</div>`
+}
+      <div>
+        <div class="team-name">${team.name}</div>
+        <div class="team-tag">[${team.short}]</div>
+      </div>
+    `;
+
     card.appendChild(header);
-
-    const playersDiv = document.createElement("div");
-    playersDiv.style.display = "none";
-
-    team.players.forEach(p => {
-      const pl = document.createElement("div");
-      pl.className = "player-line";
-      pl.innerText = `${p.ign} (${p.role})`;
-      pl.onclick = () => openPlayer(p, team.name);
-      playersDiv.appendChild(pl);
-    });
-
-    card.onclick = () => {
-      playersDiv.style.display =
-        playersDiv.style.display === "none" ? "block" : "none";
-    };
-
-    card.appendChild(playersDiv);
+    card.onclick = () => openTeam(team);
     teamBox.appendChild(card);
   });
 
+  /* ===== PLAYER PAGE ===== */
   function openPlayer(player, teamName) {
-    const card = document.getElementById("playerCard");
 
-    card.innerHTML = `
-      <h2>${player.ign}</h2>
-      <p><strong>Role:</strong> ${player.role}</p>
-      <p><strong>Team:</strong> ${teamName}</p>
-    `;
+  // 🔎 find full player data (from global players[])
+  let fullPlayer = player;
 
-    show('player');
+if (typeof players !== "undefined") {
+  const found = players.find(p => p.ign === player.ign);
+
+  if (found) {
+    fullPlayer = {
+      ...player,   // team data
+      ...found     // global data (override only if present)
+    };
   }
-  function doSearch() {
-  const q = document.getElementById("searchInput").value.toLowerCase();
-  const box = document.getElementById("searchResults");
-  box.innerHTML = "";
+}
 
-  if (!q) return;
+  // BASIC DETAILS
+  document.getElementById("playerName").innerText = fullPlayer.ign || "-";
+  const fullNameEl = document.getElementById("playerFullName");
 
-  // Search teams
-  teams.forEach(team => {
-    if (team.name.toLowerCase().includes(q)) {
+if (fullNameEl) {
+  fullNameEl.innerText = fullPlayer.fullName || "";
+}
+  document.getElementById("playerRole").innerText = fullPlayer.role || "-";
+  document.getElementById("playerTeam").innerText = teamName || "-";
+  document.getElementById("playerStatus").innerText =
+    fullPlayer.status || "Active";
+  document.getElementById("playerCountry").innerText =
+    fullPlayer.country || "-";
+
+  // TOURNAMENT HISTORY
+  const tourSection = document.getElementById("playerTournaments");
+  const tourList = document.querySelector(".player-tournament-list");
+  tourList.innerHTML = "";
+
+  if (Array.isArray(fullPlayer.tournaments) && fullPlayer.tournaments.length) {
+    tourSection.style.display = "block";
+
+    fullPlayer.tournaments.forEach(t => {
       const div = document.createElement("div");
-      div.className = "search-item";
-      div.innerHTML = `<strong>Team:</strong> ${team.name}`;
-      div.onclick = () => {
-        show('teams');
-      };
-      box.appendChild(div);
-    }
+      div.className = "player-tournament";
+      const isWinner =
+  t.result.includes("Winner") ||
+  t.result.includes("1st") ||
+  t.result.includes("🏆");
 
-    // Search players
-    team.players.forEach(p => {
-      if (p.ign.toLowerCase().includes(q)) {
+div.innerHTML = `
+  <span class="t-year">${t.year}</span> ${t.name}
+  <span class="player-tournament-result ${isWinner ? "winner-badge" : ""}">
+    ${t.result}
+  </span>
+`;
+      tourList.appendChild(div);
+    });
+  } else {
+    tourSection.style.display = "none";
+  }
+
+  // ACHIEVEMENTS
+  const achSection = document.getElementById("playerAchievements");
+  const achList = document.querySelector(".player-achievement-list");
+  achList.innerHTML = "";
+
+  if (Array.isArray(fullPlayer.achievements) && fullPlayer.achievements.length) {
+    achSection.style.display = "block";
+
+    fullPlayer.achievements.forEach(a => {
+  const li = document.createElement("li");
+  li.innerText = a.text;
+  li.className = a.type === "mvp" ? "ach-mvp" : "";
+  achList.appendChild(li);
+});
+  } else {
+    achSection.style.display = "none";
+  }
+
+  show("player");
+}
+  /* ===== SEARCH ===== */
+  function doSearch() {
+    const q = document.getElementById("searchInput").value.toLowerCase();
+    const box = document.getElementById("searchResults");
+    box.innerHTML = "";
+
+    if (!q) return;
+
+    teams.forEach(team => {
+      if (team.name.toLowerCase().includes(q)) {
         const div = document.createElement("div");
         div.className = "search-item";
-        div.innerHTML = `
-          <strong>Player:</strong> ${p.ign}
-          <div style="font-size:12px;color:#94a3b8;">
-            ${team.name}
-          </div>
-        `;
-        div.onclick = () => {
-          openPlayer(p, team.name);
-        };
+        div.innerHTML = `<strong>Team:</strong> ${team.name}`;
+        div.onclick = () => show('teams');
         box.appendChild(div);
       }
+let rosterHTML = "";
+      team.players.forEach(p => {
+        if (p.ign.toLowerCase().includes(q)) {
+          const div = document.createElement("div");
+          div.className = "search-item";
+          div.innerHTML = `
+            <strong>Player:</strong> ${p.ign}
+            <div style="font-size:12px;color:#94a3b8;">
+              ${team.name}
+            </div>
+          `;
+          div.onclick = () => openPlayer(p, team.name);
+          box.appendChild(div);
+        }
+      });
+      roster.innerHTML = rosterHTML;
     });
-  });
-}
+  }
 </script>
-
-</body>
-  </html>
-  
